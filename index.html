@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Personal Portfolio Website - Rahul Jebin Raju</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f13460b915.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Cyber Security Student</p>
+            <h1>Hi, I'm <span>Rahul Jebin Raju</span><br>From India</h1>
+        </div>
+    </div>
+</div>
+<!------------about------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>"I am a dedicated Cyber Security student with a strong focus on penetration testing, bug bounty hunting, and network security. My passion lies in identifying and mitigating vulnerabilities to safeguard digital environments. With hands-on experience in ethical hacking, I am constantly enhancing my skills to stay ahead in the ever-evolving world of cyber threats. I thrive on tackling complex security challenges and contributing to a safer online landscape."</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Penetration Testing</span><br>Web, Network, and Application security testing</li>
+                    <li><span>Bug Bounty Hunting</span><br>Vulnerability discovery and reporting</li>
+                    <li><span>Network Security</span><br>Secure network configurations, firewall management</li>
+                    <li><span>Ethical Hacking</span><br>Offensive security techniques and methodologies</li>
+                    <li><span>Programming & Scripting</span><br>Languages: C, Java, Python, Shell Scripting</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Pentesting Intern</span><br>Corizo</li>
+                    <li><span>Industrial Visit</span><br>Voleergo Solutions LLP</li>
+                    <li><span>Bug Bounty Hunting</span><br>Freelance (ongoing)</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Bachelor of Technology (BTech) in Cyber Security</span><br>University College Of Engineering Muttom,Thodupuzha</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------services------------------------>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Website Development</h2>
+                <p>I create custom, responsive websites for businesses and personal use, delivering user-friendly designs tailored to your specific needs.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-microscope"></i>
+                <h2>Penetration Testing(VAPT)</h2>
+                <p>I identify and resolve security vulnerabilities through thorough testing of your systems, ensuring your network and applications are secure from cyber threats.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-bug"></i>
+                <h2>Bug Bounty Hunting</h2>
+                <p> I find and report security flaws in web applications, helping businesses patch vulnerabilities before they're exploited.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------Portfolio--------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Pentesting on ColdBox</h3>
+                    <p>Conducted penetration testing on ColdBox framework, identifying vulnerabilities using Kali Linux tools.</p>
+                    <a href="documents/pentesting-coldbox.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Commercial Website Development</h3>
+                    <p>Developed and deployed a commercial website, focusing on functionality and user experience.</p>
+                    <a href="
+                    https://www.myownspices.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Dockerized Security Environment</h3>
+                    <p>Built a containerized environment using Docker for efficient and repeatable security testing.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--------------------Contact--------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> rahuljr7velkat@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +918330066758</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100087202142375"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/rahul_j.r.7?igsh=bTRlZ2JvOXdwbWN1"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/qr/F22RYVOAY3I2N1"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=https://www.threads.net/@rahul_j.r.7?xmt=AQGzlZcH2tNASbPfY9XgDdMPkejD-7M4VWfNio13uwHSiro""><i class="fa-brands fa-threads"></i></a>
+                    <a href="https://x.com/rahul_jr_007?t=3R4bQ6oXfEW7XitZwAaJxQ&s=08"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/rahul-jebin-raju-266564210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="documents/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Rahul Jebin Raju.<i class="fa-solid fa-heart"></i>2024</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzIl0wyOBNK7U_zbj2AsSJbWZFcQyk5kx8XUrLJ0d9-x20v6ItE-mn2kd_Ahqx-ZRkVwQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
